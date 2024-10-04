@@ -1,0 +1,78 @@
+@import "../../../data/styles.css";
+
+.social,
+.email-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.social a,
+.email-wrapper a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent black */
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.social-icon-wrapper:hover,
+.social a:hover .social-icon-wrapper,
+.email-wrapper a:hover .social-icon-wrapper {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker transparent black */
+  transform: scale(1.2) translateX(-5px); /* Increase size and move left */
+}
+
+.social a:hover .social-text,
+.email-wrapper a:hover .social-text {
+  color: var(--primary-color);
+}
+
+.social-text {
+  color: var(--secondary-color);
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  padding-top: 20px;
+  border-top: 3px solid rgba(92, 92, 92, 0.6);
+  margin-top: 20px;
+}
+
+.email-wrapper {
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .social-text {
+    font-size: 14px;
+  }
+
+  .social-icon-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-icon {
+    font-size: 16px;
+  }
+}

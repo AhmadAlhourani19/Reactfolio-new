@@ -1,0 +1,13 @@
+.logo1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 100px;
+
+}

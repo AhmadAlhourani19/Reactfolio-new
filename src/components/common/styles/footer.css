@@ -1,0 +1,82 @@
+@import "../../../data/styles.css";
+
+.footer {
+    display: flex;
+    padding-top: 25px;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.footer-links,
+.footer-credits {
+    flex-basis: 50%;
+}
+
+.footer-links {
+    margin-left: -40px;
+}
+
+.footer-nav-link-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav-link-item {
+    font-weight: bold;
+    font-size: 80%;
+    color: rgb(140, 143, 168);
+}
+
+.footer-nav-link-item:hover {
+    transform: scale(1.2);
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-nav-link-list a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.footer-nav-link-list a:hover {
+    color: var(--link-color);
+}
+
+.footer-credits-text {
+    justify-content: flex-end;
+    color: var(--footer-text-color); /* Updated to use the CSS variable */
+    font-size: 14px;
+    text-align: right;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .footer-links {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-left: 0; 
+    }
+
+    .footer-nav-link-list {
+        display: none;
+    }
+
+    .footer-credits {
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .footer-credits-text{
+        margin-left: 25px;
+    }
+}

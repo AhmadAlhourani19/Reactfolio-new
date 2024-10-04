@@ -1,0 +1,154 @@
+.homepage-logo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 130px;
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage-container {
+  padding-top: 25px;
+}
+
+.homepage-first-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.homepage-first-area-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; 
+  margin-left: 5px;
+}
+
+.homepage-title {
+  width: 100% !important;
+  margin-top: 20px;
+}
+
+.homepage-subtitle {
+  width: 100% !important;
+  background-color: rgba(240, 240, 240, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.homepage-first-area-right-side {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 200px;
+}
+
+.homepage-image-container {
+  width: 100%; 
+  max-width: 550px; 
+  height: auto;
+  margin-left: 10px; 
+}
+
+.homepage-image-wrapper {
+  overflow: hidden;
+  border-radius: 10%;
+}
+
+.homepage-image-wrapper img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10%; 
+}
+
+.about-socials {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.homepage-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.homepage-social-icon {
+  padding-right: 20px;
+  font-size: 25px;
+  transition: color 0.2s ease-in-out;
+  color: var(--secondary-color);
+}
+
+.homepage-social-icon:hover {
+  color: var(--primary-color);
+  transform: scale(1.3);
+}
+
+.homepage-after-title {
+  display: flex;
+}
+
+.homepage-projects {
+  flex-basis: 300px;
+  padding-top: 40px;
+}
+
+.homepage-works {
+  flex-basis: 600px;
+  padding-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .homepage-first-area {
+    flex-direction: column;
+  }
+
+  .homepage-first-area-left-side {
+    width: 100%;
+    order: 2;
+  }
+
+  .homepage-title {
+    order: 2;
+  }
+
+  .homepage-subtitle {
+    order: 3;
+  }
+
+  .homepage-first-area-right-side {
+    width: 100%;
+    order: 1;
+  }
+
+  .homepage-image-container {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .homepage-after-title {
+    flex-direction: column;
+  }
+
+  .homepage-projects,
+  .homepage-works {
+    flex-basis: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .homepage-first-area-right-side {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+
+  .homepage-image-wrapper img{
+    height: 80%;
+    width: 80%;
+    margin-left: 20px;
+  }
+}
