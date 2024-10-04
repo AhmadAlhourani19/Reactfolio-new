@@ -249,7 +249,37 @@ const SkillsBars = () => {
                           <span className="tooltip">92%</span>
                         </span>
                       </div>
-                    </motion.div>
+                    </motion.div>                    
+                  </div>
+                  <div className="skill-box">
+                    <motion.div
+                      initial={{ opacity: 0, x: -100 }}
+                      animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas Logo" className="skill-logo" />
+                      <span className="text-title">Pandas</span>
+                      <div className="skill-bar">
+                        <span className="skill-per pandas">
+                          <span className="tooltip">88%</span>
+                        </span>
+                      </div>
+                    </motion.div>                    
+                  </div>
+                  <div className="skill-box">
+                    <motion.div
+                      initial={{ opacity: 0, x: -100 }}
+                      animate={isVisible ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter Logo" className="skill-logo" />
+                      <span className="text-title">Jupyter</span>
+                      <div className="skill-bar">
+                        <span className="skill-per Jupyter">
+                          <span className="tooltip">90%</span>
+                        </span>
+                      </div>
+                    </motion.div>                    
                   </div>
                   <div className="skill-box">
                     <motion.div
@@ -370,7 +400,7 @@ const SkillsBars = () => {
                       animate={isVisible ? { opacity: 1, x: 0 } : {}}
                       transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                      <img src={MySQL} alt="MySQL Logo" className="skill-logo" />
+                      <img src="https://upload.wikimedia.org/wikipedia/de/d/dd/MySQL_logo.svg" alt="MySQL Logo" className="skill-logo" />
                       <span className="text-title">MySQL</span>
                       <div className="skill-bar">
                         <span className="skill-per MySQL">
